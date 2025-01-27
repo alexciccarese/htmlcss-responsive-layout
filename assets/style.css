@@ -11,7 +11,7 @@
 
 body {
   background-color: var(--gi-background);
-  width: 480px;
+  max-width: 480px;
   font-family: font-family: "Montserrat", serif;
 
   h1 {
@@ -30,6 +30,7 @@ img {
 
 header {
   .container {
+    width: 100%;
     background-color: white;
     text-align: center;
     padding: 0.5rem 0;
@@ -40,7 +41,23 @@ header {
 /*************************************************
     TABLET
  *************************************************/
+@media screen and (min-width:768px) {
+  
+  body {
+    min-width: 768px;
 
+    h1 {
+      font-size: 56px;
+    }
+  }
+
+  header {
+    .container {
+      text-align: start;
+      padding-left: 1.5rem;
+    }
+  }
+}
 
 
 
