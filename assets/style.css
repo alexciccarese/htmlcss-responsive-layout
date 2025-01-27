@@ -118,7 +118,9 @@ header {
   }
 }
 
-
+.banner {
+  display: none;
+}
 
 
 
@@ -237,6 +239,10 @@ header {
     }
   }
 
+  .banner {
+    display: block;
+  }
+
   .col-md-4 {
     width: calc(100% / 12 * 4);
   }
@@ -305,6 +311,10 @@ header {
         display: block;
       }
     }
+  }
+
+  .banner {
+    display: block;
   }
 
   .col-lg-4 {
