@@ -1,14 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-  --gi-background:#f6f5f3;
-  --gi-secondary-grey:#a1a1a1;
-  --gi-logo:#ff9614;
-  --gi-title:#4e3969;
+  --gi-background: #f6f5f3;
+  --gi-secondary-grey: #a1a1a1;
+  --gi-logo: #ff9614;
+  --gi-title: #4e3969;
 }
 
 body {
@@ -36,8 +36,10 @@ body {
   }
 }
 
-img, iframe {
+img,
+iframe {
   max-width: 100%;
+  max-height: 100%;
 }
 
 
@@ -56,13 +58,13 @@ header {
   .container {
     width: 90%;
     margin: auto;
-  
+
     .title {
       padding-top: 0.5rem;
       display: flex;
       gap: 0.5rem;
-      flex-wrap: nowrap;x
-  
+      flex-wrap: nowrap;
+
       h2:last-child {
         display: none;
       }
@@ -71,14 +73,13 @@ header {
 }
 
 .tutorial {
-  padding: 1rem 0;
+  margin: 1rem 0;
+  box-shadow: rgba(147, 147, 147, 0.07) 0px 1px 1px, rgba(147, 147, 147, 0.07) 0px 2px 2px, rgba(147, 147, 147, 0.07) 0px 4px 4px, rgba(147, 147, 147, 0.07) 0px 8px 8px, rgba(147, 147, 147, 0.07) 0px 16px 16px;
 
   .info {
-    display: flex;
-    width: 100%;
     padding: 2rem;
 
-    ul{
+    ul {
       list-style: none;
       font-size: 14px;
       line-height: 2rem;
@@ -152,7 +153,7 @@ header {
     TABLET
  *************************************************/
 @media screen and (min-width:768px) {
-  
+
   body {
     min-width: 768px;
 
@@ -176,9 +177,9 @@ header {
     }
   }
 
-  .intro{
+  .intro {
     padding-top: 3rem;
-    
+
     .container {
 
       .title {
@@ -186,17 +187,35 @@ header {
           display: block;
         }
       }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 3rem;
+      }
     }
+  }
+
+  .col-md-4 {
+    width: calc(100% / 12 * 4);
+  }
+
+  .col-md-6 {
+    width: calc(100% / 12 * 6);
+  }
+
+  .col-md-12{
+    width: calc(100% / 12 * 12);
   }
 }
 
 
 
- /*************************************************
+/*************************************************
     DESKTOP
  *************************************************/
- @media screen and (min-width:992px) {
-  
+@media screen and (min-width:992px) {
+
   body {
     min-width: 992px;
 
@@ -206,10 +225,27 @@ header {
   }
 
 
-  .intro {
+  /*   .intro {
 
     .container {
       width: 70%;
+      .title {
+        h2:last-child {
+          display: block;
+        }
+      }
+
+      .row {
+        flex-wrap: nowrap;
+      }
     }
   }
- }
+
+  .col-md-4 {
+    width: calc(100% / 12 * 4);
+  }
+
+  .col-md-8 {
+    width: calc(100% / 12 * 8);
+  } */
+}
