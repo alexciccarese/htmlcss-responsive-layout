@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --gi-background:#f6f5f3;
+  --gi-title:#ff9614;
+}
+
+body {
+  background-color: var(--gi-background);
+  width: 480px;
+  font-family: font-family: "Montserrat", serif;
+
+  h1 {
+    font-family: 'Nerko One', cursive;
+    color: var(--gi-title);
+    font-weight: 100;
+    font-size: 48px;
+    text-shadow: 2px 2px #a9a9a9;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+
+header {
+  .container {
+    background-color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+}
+
+
+/*************************************************
+    TABLET
+ *************************************************/
+
+
+
+
+ /*************************************************
+    DESKTOP
+ *************************************************/
