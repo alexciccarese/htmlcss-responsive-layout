@@ -171,7 +171,7 @@ header {
 
     a {
       color: white;
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 }
@@ -385,6 +385,22 @@ header {
 
   .banner {
     display: block;
+  }
+
+  .site_footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    padding: 2rem 1.5rem;
+
+    .copyright {
+      justify-content: start;
+    }
+
+    ul {
+      padding: 0;
+      align-items: center;
+    }
   }
 
   .col-lg-4 {
