@@ -222,6 +222,12 @@ gap: 0.5rem;    text-align: center;
     }
   }
 
+  .social {
+    .item {
+      padding: 01rem 3.3rem;
+    }
+  }
+
   .col-md-4 {
     width: calc(100% / 12 * 4);
   }
