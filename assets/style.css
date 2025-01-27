@@ -128,10 +128,11 @@ header {
 }
 
 .presentation {
+  margin-bottom: 3rem;
 
   hr {
     width: 20%;
-    border-style:double;
+    border-style: double;
     border-color: #ff9614;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
@@ -140,14 +141,9 @@ header {
   .img {
     width: 60%;
     margin: auto;
-
-    img {
-      margin-bottom: 1rem;
-    }
   }
 
   p {
-    font-size: 16px;
     line-height: 2rem;
   }
 }
@@ -271,6 +267,24 @@ header {
 
   .banner {
     display: block;
+  }
+
+  .presentation {
+    margin: 3rem;
+
+    .img {
+      width: 40%;
+      float: left;
+      margin-right: 1rem;
+
+      img{
+        margin: 0;
+      }
+    }
+
+    p {
+      line-height: 2rem;
+    }
   }
 
   .col-md-4 {
