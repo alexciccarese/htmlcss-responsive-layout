@@ -9,6 +9,7 @@
   --gi-secondary-grey: #a1a1a1;
   --gi-logo: #ff9614;
   --gi-title: #4e3969;
+  --gi-footer:#7c69a4;
 }
 
 body {
@@ -148,7 +149,32 @@ header {
   }
 }
 
+.site_footer {
+  background-color: var(--gi-footer);
+  color: white;
+  text-align: center;
+  padding: 2rem;
 
+  .copyright {
+    line-height: 1.5rem;
+    font-size: 12px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    text-decoration: underline;
+    padding-top: 0.5rem;
+
+    a {
+      color: white;
+      font-size: 14px;
+    }
+  }
+}
 
 .row {
   display: flex;
