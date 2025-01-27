@@ -270,7 +270,7 @@ header {
   }
 
   .presentation {
-    margin: 3rem;
+    margin: 3rem 0;
 
     .img {
       width: 40%;
