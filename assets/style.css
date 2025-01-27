@@ -235,20 +235,6 @@ header {
 }
 
 
-/*************************************************
-    BONUS
- *************************************************/
-@media screen and (min-width: 576px) {
-  .social {
-    gap: 1rem;
-
-    .item {
-      padding: 1rem 0;
-      width: 100%;
-      justify-content: center;
-    }
-  }
-}
 
 /*************************************************
     TABLET
@@ -437,5 +423,30 @@ header {
 
   .col-lg-8 {
     width: calc(100% / 12 * 8);
+  }
+}
+
+
+/*************************************************
+    BONUS
+ *************************************************/
+ @media screen and (min-width: 576px) {
+  .social {
+    gap:1rem;
+
+    .item {
+      padding: 1rem 0;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .presentation {
+
+    .img {
+      width: 50%;
+      float: left;
+      margin-right: 1rem;
+    }
   }
 }
